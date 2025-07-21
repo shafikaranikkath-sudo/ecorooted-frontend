@@ -40,11 +40,11 @@ function removeFromCart(index) {
 }
 
 function checkout() {
-  fetch('http://localhost:4242/create-checkout-session', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ cart })
-  })
+fetch('https://ecorooted-backend.onrender.com/create-checkout-session', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ cart })
+})
   .then(res => res.json())
   .then(data => {
     if (data.url) {
