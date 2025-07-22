@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoRooted - Rooted in Sustainability</title>
+  <title>EcoRooted</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
@@ -16,7 +16,7 @@
       <a href="#">About</a>
       <a href="#">Contact</a>
     </nav>
-    <div class="cart" onclick="openCart()">🛒</div>
+    <div class="cart">🛒</div>
   </header>
 
   <section class="hero">
@@ -28,41 +28,36 @@
   <section class="products">
     <h2>Featured Products</h2>
     <div class="product-grid">
-      <div class="product-card">
-        <img src="beeswax-wrap.jpg" alt="Beeswax Wraps" />
-        <h3>Beeswax Wraps</h3>
-        <p>$12.99</p>
-        <button onclick="addToCart('Beeswax Wraps', 12.99)">Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="bamboo-cutlery.jpg" alt="Bamboo Cutlery" />
-        <h3>Bamboo Cutlery Set</h3>
-        <p>$9.99</p>
-        <button onclick="addToCart('Bamboo Cutlery Set', 9.99)">Add to Cart</button>
-      </div>
+      <div class="product-card"><img src="beeswax-wrap.jpg" alt=""><h3>Beeswax Wraps</h3><p>$18</p><button>Add to Cart</button></div>
+      <div class="product-card"><img src="bamboo-cutlery.jpg" alt=""><h3>Bamboo Cutlery Set</h3><p>$24</p><button>Add to Cart</button></div>
+      <div class="product-card"><img src="dish-cloths.jpg" alt=""><h3>Reusable Dish Cloths</h3><p>$20</p><button>Add to Cart</button></div>
+      <div class="product-card"><img src="compost-bags.jpg" alt=""><h3>Compost Bags</h3><p>$16</p><button>Add to Cart</button></div>
     </div>
   </section>
 
-  <section class="about">
+  <section class="benefits">
     <h2>Why EcoRooted?</h2>
-    <p>We provide high-quality, sustainable kitchen products that are safe for your home and better for the planet.</p>
-    <a href="#" class="btn-outline">Learn More</a>
+    <div class="benefit-icons">
+      <div><span>♻️</span><p>100% Plastic-Free</p></div>
+      <div><span>🌿</span><p>Ethically Sourced</p></div>
+      <div><span>🚚</span><p>Fast Eco Packaging</p></div>
+      <div><span>🧼</span><p>Safe for Your Home</p></div>
+    </div>
   </section>
 
-  <section class="newsletter">
-    <h2>Get 10% Off</h2>
-    <p>Sign up for our newsletter and receive 10% off your first order.</p>
-    <input type="email" placeholder="Enter your email" />
-    <button>Subscribe</button>
+  <section class="info-grid">
+    <div class="about">
+      <h3>About Us Preview</h3>
+      <p>We are committed to offering sustainable alternatives that reduce waste and promote a healthier planet.</p>
+      <a href="#" class="btn-outline">Learn More</a>
+    </div>
+    <div class="newsletter">
+      <h3>Newsletter Signup</h3>
+      <p>Get 10% off your first order</p>
+      <input type="email" placeholder="Email address" />
+      <button>Subscribe</button>
+    </div>
   </section>
-
-  <div id="cart-modal" class="cart-modal">
-    <h3>Your Cart</h3>
-    <ul id="cart-items"></ul>
-    <p><strong>Total:</strong> $<span id="cart-total">0.00</span></p>
-    <button onclick="checkout()">Checkout</button>
-    <button onclick="closeCart()">Close</button>
-  </div>
 
   <footer>
     <p>&copy; 2025 EcoRooted. All rights reserved.</p>
