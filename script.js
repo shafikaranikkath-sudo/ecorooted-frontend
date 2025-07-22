@@ -40,18 +40,16 @@ function removeFromCart(index) {
 }
 
 function checkout() {
-  fetch('https://ecorooted-backend.onrender.com/create-checkout-session', {
+  fetch('https://your-backend-url.com/create-checkout-session', {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ cart })
   })
-    .then(res => res.json())
-    .then(data => {
-      if (data.url) {
-        window.location.href = data.url;
-      }
-    })
-    .catch(err => console.error(err));
+  .then(res => res.json())
+  .then(data => {
+    if (data.url) {
+      window.location.href = data.url;
+    }
+  })
+  .catch(err => console.error(err));
 }
