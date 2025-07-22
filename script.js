@@ -40,7 +40,7 @@ function removeFromCart(index) {
 }
 
 function checkout() {
-  fetch('https://your-backend-url.com/create-checkout-session', {
+  fetch('https://ecorooted-backend.onrender.com/create-checkout-session', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ cart })

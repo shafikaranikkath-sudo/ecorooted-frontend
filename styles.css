@@ -1,6 +1,7 @@
+
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background-color: #F4F1EC;
   color: #2E5E2D;
 }
@@ -8,115 +9,95 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px 30px;
+  background: #fff;
 }
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #2E5E2D;
 }
 nav a {
-  margin: 0 10px;
+  margin: 0 12px;
   text-decoration: none;
   color: #2E5E2D;
-  font-weight: 500;
 }
 .cart {
   font-size: 20px;
   cursor: pointer;
 }
 .hero {
+  background-color: #E8F5E9;
   text-align: center;
   padding: 60px 20px;
-  background: #E8F5E9;
 }
 .hero h1 {
-  font-size: 40px;
+  font-size: 36px;
   margin-bottom: 10px;
 }
 .hero .btn {
-  display: inline-block;
   padding: 10px 20px;
   background: #2E5E2D;
-  color: #fff;
+  color: white;
+  border: none;
+  border-radius: 5px;
   text-decoration: none;
-  margin-top: 20px;
-  border-radius: 4px;
 }
 .products {
   padding: 40px 20px;
+  text-align: center;
 }
 .product-grid {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 .product-card {
   background: #fff;
-  padding: 20px;
+  padding: 15px;
+  border-radius: 10px;
   width: 200px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 .product-card img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  border-radius: 5px;
 }
-.about, .newsletter {
+.benefits {
   text-align: center;
   padding: 40px 20px;
 }
-.btn-outline {
-  border: 2px solid #2E5E2D;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #2E5E2D;
-  margin-top: 10px;
-  display: inline-block;
-  border-radius: 4px;
+.benefit-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
-.newsletter input {
-  padding: 10px;
-  margin-right: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.benefit-icons div {
+  text-align: center;
+}
+.info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+.about, .newsletter {
+  flex: 1 1 300px;
+  max-width: 500px;
+  padding: 20px;
+}
+.btn-outline {
+  padding: 10px 20px;
+  border: 2px solid #2E5E2D;
+  background: transparent;
+  color: #2E5E2D;
+  border-radius: 5px;
+  text-decoration: none;
 }
 footer {
-  background: #ffffff;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
-  box-shadow: 0 -1px 5px rgba(0,0,0,0.05);
-}
-.cart-modal {
-  display: none;
-  position: fixed;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  background: white;
-  padding: 20px;
-  border: 2px solid #2E5E2D;
-  z-index: 1000;
-  width: 300px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-}
-.cart-modal ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 10px 0;
-}
-.cart-modal button {
-  margin-top: 10px;
-  background-color: #2E5E2D;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  border-radius: 4px;
+  background: #fff;
 }
